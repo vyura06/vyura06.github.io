@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Dropdown } from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
 import styled from 'styled-components';
 import i18n from '../i18n';
 
@@ -30,9 +31,9 @@ function Navibar() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto"> 
-                            <Nav.Link href="/">{t("home.home")}</Nav.Link>
-                            <Nav.Link href="/users">{t("home.film")}</Nav.Link>
-                            <Nav.Link href="/about">{t("home.about")}</Nav.Link>
+                            <NavLink to="/">{t("home.home")}</NavLink>
+                            <NavLink to="/users">{t("home.film")}</NavLink>
+                            <NavLink to="/about">{t("home.about")}</NavLink>
                         </Nav>
                         <Nav>
                             <Dropdown>
