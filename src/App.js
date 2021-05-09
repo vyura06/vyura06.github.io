@@ -10,7 +10,6 @@ import WebFont from 'webfontloader';
 
 import { Route } from "react-router-dom";
 import { Home } from './Home';
-import { About } from './About';
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
           <Navibar />
                 <Route exact path="/" component={Home} />
                 <Route path="/users" component={Users} />
-                <Route exact path="/about" component={About} />
                 <Route path="/about/:userName" component={UserID} />
         </Suspense>
         <div className="footer"><Footer/></div>

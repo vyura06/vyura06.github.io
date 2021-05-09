@@ -33,7 +33,6 @@ function Navibar() {
                         <Nav className="mr-auto"> 
                             <NavLink to="/">{t("home.home")}</NavLink>
                             <NavLink to="/users">{t("home.film")}</NavLink>
-                            <NavLink to="/about">{t("home.about")}</NavLink>
                         </Nav>
                         <Nav>
                             <Dropdown>

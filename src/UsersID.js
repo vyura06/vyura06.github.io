@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import { Container, Card, Col, Row, Image, Button } from 'react-bootstrap';
 import JSONDATA from './components/MOCK_DATA.json';
@@ -27,12 +27,14 @@ function UsersID() {
                 fontFamily: "Orelega One",
             }}>
 
-                <Button href="/users" variant="dark" style={{
-                    margin: "0.2rem 0 0.2rem",
-                    float: "right",
-                    fontFamily: "Orelega One"
-                }}>BACK
-                </Button>
+                <NavLink to="/users">
+                    <Button variant="dark" style={{
+                        margin: "0.2rem 0 0.2rem",
+                        float: "right",
+                        fontFamily: "Orelega One"
+                    }}>BACK
+                    </Button>
+                </NavLink>
 
                 <Container style={{
                     marginTop: "1rem",

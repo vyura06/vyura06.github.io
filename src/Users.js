@@ -3,6 +3,7 @@ import JSONDATA from './components/MOCK_DATA.json';
 import { Table, Container, Row, Col } from 'react-bootstrap';
 import Search from './components/Search';
 import { useTranslation } from 'react-i18next'
+import {NavLink} from 'react-router-dom';
 
 export default function Users(){
 
@@ -36,10 +37,10 @@ export default function Users(){
                                         JSONDATA.map((val, index) => {
                                             return (
                                                 <tr sty>
-                                                    <th style={{padding:"8px"}}><a href={val.link} style={{margin:"8px"}}>{index + 1}</a></th>
-                                                    <th style={{padding:"8px"}}><a href={val.link} style={{margin:"8px"}}>{val.first_name}</a></th>
-                                                    <th style={{padding:"8px"}}><a href={val.link} style={{margin:"8px"}}>{val.last_name}</a></th>
-                                                    <th style={{padding:"8px"}}><a href={val.link} style={{margin:"8px"}}>{val.year_of_birth}</a></th>
+                                                    <th style={{padding:"8px"}}><NavLink to={val.link} style={{margin:"8px"}}>{index + 1}</NavLink></th>
+                                                    <th style={{padding:"8px"}}><NavLink to={val.link} style={{margin:"8px"}}>{val.first_name}</NavLink></th>
+                                                    <th style={{padding:"8px"}}><NavLink to={val.link} style={{margin:"8px"}}>{val.last_name}</NavLink></th>
+                                                    <th style={{padding:"8px"}}><NavLink to={val.link} style={{margin:"8px"}}>{val.year_of_birth}</NavLink></th>
                                                 </tr>
                                             );
                                         })
