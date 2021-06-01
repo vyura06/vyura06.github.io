@@ -1,46 +1,107 @@
-import React, { Suspense } from "react";
-import './styles/App.css';
+import React, { useState, useEffect} from "react";
 import './index';
+import './styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navibar from './components/Navibar'
-import Footer from './components/Footer'
-import UserID from './UsersID'
-import Users from './Users'
-import WebFont from 'webfontloader';
-
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from './Home';
-
-const Loader = () => (
-  <div>
-      Loading
-  </div>
-);
+import Fire from './components/Fire';
+import Login from './components/Login'
+import Hero from './components/Hero'
 
 function App() {
+  const [user, setUser] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [passwordError, setPasswordError] = useState('');
+  const [hasAccount, setHasAccount] = useState(false);
+
+  const clearInputs = () => {
+    setEmail('');
+    setPassword('');
+  }
+
+  const clearErrors = () => {
+    setEmailError('');
+    setPasswordError('');
+  }
+  
+  const handleLogin = () => {
+    clearErrors();
+    Fire
+    .auth()
+    .signInWithEmailAndPassword(email, password)
+    .catch(err =>{
+      switch(err.code){
+        case "auth/invalid-email":
+        case "auth/user-disabled":
+        case "auth/user-not-found":
+          setEmailError(err.message);
+          break;
+        case "auth/wrong-password":
+          setPasswordError(err.message);
+          break;
+      }
+    });
+  };
+
+  const handleSignup = () =>{
+    clearErrors();
+    Fire
+    .auth()
+    .createUserWithEmailAndPassword(email, password)
+    .catch(err =>{
+      switch(err.code){
+        case "auth/email-already-in-use":
+        case "auth/invalid-email":
+          setEmailError(err.message);
+          break;
+        case "auth/weak-password":
+          setPasswordError(err.message);
+          break;
+      }
+    });
+  }
+
+  const handleLogout = () => {
+    Fire.auth().signOut();
+  }
+
+  const authListener = () => {
+    Fire.auth().onAuthStateChanged(user => {
+      if(user){
+        clearInputs();
+        setUser(user);
+      }else{
+        setUser("");
+      }
+    });
+  }
+
+  useEffect(() => {
+    authListener();
+  }, [])
+
   return (
     <>
       <div className="background">
-        <Suspense fallback={<Loader/>}>
-          <Router basename={process.env.PUBLIC_URL}>
-            <Navibar />
-              <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route path="/users" component={Users} />
-                  <Route path="/about/:userName" component={UserID} />
-              </Switch>
-          </Router>
-        </Suspense>
-        <div className="footer"><Footer/></div>
+        {user ? (
+          <Hero handleLogout={handleLogout}/>
+        ):(
+          <Login 
+          email={email} 
+          setEmail={setEmail} 
+          password={password} 
+          setPassword={setPassword} 
+          handleLogin={handleLogin}
+          handleSignup={handleSignup}
+          hasAccount={hasAccount}
+          setHasAccount={setHasAccount}
+          emailError={emailError}
+          passwordError={passwordError}
+          ></Login>
+        )}
       </div>
     </>
   );
 }
-
-WebFont.load({
-  google: {
-    families: ['Orelega One Web:400', 'sans-serif']
-  }
-});
 
 export default App;

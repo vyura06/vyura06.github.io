@@ -28,7 +28,7 @@ const Jumbotron = () => (
         <Jumbo fluid className="jumbo">
             <div className="overlay"></div>
             <Container>
-                <h1>Filmmakers of Belarus</h1>
+                <h1>My Portfolio</h1>
             </Container>
         </Jumbo>
     </Styles>

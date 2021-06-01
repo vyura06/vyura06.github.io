@@ -2,13 +2,10 @@
     "home.lng-ru": "Рус",
     "home.lng-en": "Англ",  
     "home.home": "Главная",
-    "home.film": "Режиссеры",
-    "home.about": "Подробнее",
-    "home.logo": "Режиссеры Беларуси",
+    "home.film": "Портфолио",
+    "home.logo": "Моё портфолио",
     "home.language": "Язык",
     "home.back": "Назад",
 
-    "users.first": "Имя",
-    "users.last": "Фамилия",
-    "users.year": "Дата рождения"
+    "users.first": "Имя репозитория:"
 }

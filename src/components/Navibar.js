@@ -1,9 +1,8 @@
 import React from 'react';
-import { Navbar, Nav, Dropdown } from 'react-bootstrap';
+import { Navbar, Nav, Dropdown, Button } from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';
 import styled from 'styled-components';
 import i18n from '../i18n';
-import '../styles/Navibar.css';
 
 import { useTranslation } from 'react-i18next'
 
@@ -16,7 +15,7 @@ const Styles = styled.div`
     }
 `
 
-function Navibar() {
+function Navibar({handleLogout}) {
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
@@ -28,14 +27,16 @@ function Navibar() {
         <>
             <Styles>
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+
                     <Navbar.Brand href="/">{t("home.logo")}</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto"> 
-                            <NavLink to="/" className="homeOnClick">{t("home.home")}</NavLink>
+                            <NavLink to="/">{t("home.home")}</NavLink>
                             <NavLink to="/users">{t("home.film")}</NavLink>
                         </Nav>
                         <Nav>
+                        <Button variant="link" onClick={handleLogout} style={{color:'#adb1b8'}}>Logout</Button>
                             <Dropdown>
                                 <Dropdown.Toggle variant="dark" id="dropdown-menu-align-right" style={{color:'#adb1b8'}}>
                                     {t("home.language")}
