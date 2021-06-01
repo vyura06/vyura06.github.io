@@ -3,7 +3,7 @@ import { Navbar, Nav, Dropdown } from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';
 import styled from 'styled-components';
 import i18n from '../i18n';
-import './styles/Navibar.css';
+import '../styles/Navibar.css';
 
 import { useTranslation } from 'react-i18next'
 
