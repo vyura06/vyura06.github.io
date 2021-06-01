@@ -2,15 +2,12 @@
     "home.lng-ru": "Ru",
     "home.lng-en": "En",
     "home.home": "Home",
-    "home.film": "Filmmakers",
-    "home.about": "More details",
-    "home.logo": "Filmmakers of Belarus",
+    "home.film": "Portfolio",
+    "home.logo": "My Portfolio",
     "home.language": "Language",
     "home.back": "Back",
 
-    "users.first": "First Name",
-    "users.last": "Last Name",
-    "users.year": "Year of birth"
+    "users.first": "Repository name:"
 
 }
 
