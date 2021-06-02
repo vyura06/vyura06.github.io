@@ -1,14 +1,14 @@
-import React, {Suspense} from "react";
+import React, {Suspense, Button} from "react";
 import '../styles/App.css';
 import '../index';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from '../Home'
 import Navibar from './Navibar'
 import Footer from './Footer'
 import Users from '../Users'
 import WebFont from 'webfontloader';
 
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from '../Home';
 
 const Loader = () => (
   <div>

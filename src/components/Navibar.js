@@ -33,10 +33,10 @@ function Navibar({handleLogout}) {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto"> 
                             <NavLink to="/">{t("home.home")}</NavLink>
-                            <NavLink to="/users">{t("home.film")}</NavLink>
+                            <NavLink to="/users">{t("home.port")}</NavLink>
                         </Nav>
                         <Nav>
-                        <Button variant="link" onClick={handleLogout} style={{color:'#adb1b8'}}>Logout</Button>
+                        <Button variant="link" onClick={handleLogout} style={{color:'#adb1b8', backgroundColor:"#343a40", marginRight:"0.5rem"}}>{t("logout")}</Button>
                             <Dropdown>
                                 <Dropdown.Toggle variant="dark" id="dropdown-menu-align-right" style={{color:'#adb1b8'}}>
                                     {t("home.language")}

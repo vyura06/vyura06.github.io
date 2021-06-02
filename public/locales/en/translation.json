@@ -2,12 +2,28 @@
     "home.lng-ru": "Ru",
     "home.lng-en": "En",
     "home.home": "Home",
-    "home.film": "Portfolio",
+    "home.port": "Portfolio",
     "home.logo": "My Portfolio",
     "home.language": "Language",
     "home.back": "Back",
+    "logout": "Logout",
 
-    "users.first": "Repository name:"
+    "author.name":"Yura Vechorko",
+    "author.info":"BSUIR student, specialty POIT.",
+    "contact.me":"You can contact me by clicking on any social network below.",
+    "repository":"Repository name:",
+    "labWork":"Laboratory work performed in the 4th semester in the discipline of",
 
+    "KSIS":"KSIS",
+    "OOP":"OOP",
+    "WebT":"WebT",
+    "GH":"GhostHome-1",
+    "RPI":"RPI",
+    "CJ":"CarouselJS",
+
+    "about":"About the project:",
+    "about.info1":"This website is my course work in the discipline",
+    "about.info2":"I chose the topic for my work based on my preferences in programming.",
+    "back":"BACK"
 }
 

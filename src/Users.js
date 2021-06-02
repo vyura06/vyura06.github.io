@@ -31,7 +31,7 @@ export default function Users() {
                                         width: "5rem",
                                         float: "right",
                                         fontFamily: "Orelega One"
-                                    }}>BACK
+                                    }}>{t("back")}
                                     </Button>
                                 </NavLink>
                             </Col>
@@ -43,7 +43,7 @@ export default function Users() {
                             <thead>
                                 <tr>
                                     <th style={{ padding: "8px" }}>#</th>
-                                    <th style={{ padding: "8px" }}>{t("users.first")}</th>
+                                    <th style={{ padding: "8px" }}>{t("repository")}</th>
                                 </tr>
                             </thead>
                             <tbody style={{ backgroundColor: "lightblue", opacity: "0.6", color: "black", fontWeight: "400" }}>

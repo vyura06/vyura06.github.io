@@ -3,6 +3,8 @@ import {Jumbotron as Jumbo, Container} from 'react-bootstrap';
 import ft from '../img/Ft.jpg';
 import styled from 'styled-components';
 
+import { useTranslation } from 'react-i18next'
+
 const Styles = styled.div `
     .jumbo {
         background: url(${ft}) no-repeat fixed bottom;
@@ -23,15 +25,20 @@ const Styles = styled.div `
     }
 `
 
-const Jumbotron = () => (
-    <Styles>
-        <Jumbo fluid className="jumbo">
-            <div className="overlay"></div>
-            <Container>
-                <h1>My Portfolio</h1>
-            </Container>
-        </Jumbo>
-    </Styles>
-)
+function Jumbotron () {
+    const { t } = useTranslation();
+    return(
+        <>
+        <Styles>
+            <Jumbo fluid className="jumbo">
+                <div className="overlay"></div>
+                <Container>
+                    <h1>{t("home.logo")}</h1>
+                </Container>
+            </Jumbo>
+        </Styles>
+        </>
+    )
+}
 
 export default Jumbotron;

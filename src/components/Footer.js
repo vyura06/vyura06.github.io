@@ -1,12 +1,19 @@
 import React from 'react';
 import {Container} from 'react-bootstrap';
 
-const Footer = () => (
-        <Container fluid style={{backgroundColor: '#343a40', color: '#adb1b8'}}>
-            <Container style={{display: 'flex', justifyContent: 'center', padding: '8px'}}>
-                <p>My Portfolio</p>
-            </Container>
-        </Container>
-)
+import { useTranslation } from 'react-i18next'
 
-export default Footer;
+function Footer () {
+    const { t } = useTranslation();
+    return(
+        <>
+            <Container fluid style={{backgroundColor: '#343a40', color: '#adb1b8'}}>
+                <Container style={{display: 'flex', justifyContent: 'center', padding: '8px'}}>
+                    <p>{t("home.logo")}</p>
+                </Container>
+            </Container>
+        </>
+    )
+}
+
+export default Footer
