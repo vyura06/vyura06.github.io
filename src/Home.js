@@ -45,14 +45,13 @@ export const Home = () => (
                             <Timeline lineColor={'#343a40'}>
                                 <TimelineItem
                                     key="001"
-                                    dateText="Name&Year of birth"
+                                    dateText='Repository name:'
                                     dateInnerStyle={{ background: '#343a40', color: 'white' }}>
                                     <div style={{ fontSize: "3rem", fontWeight: "bold" }}></div>
                                     <div style={{ fontSize: "2rem", fontWeight: "bold" }}></div>
                                 </TimelineItem>
                                 <TimelineItem
                                     key="002"
-                                
                                     dateInnerStyle={{ background: 'white ', color: '#343a40' }}
                                     bodyContainerStyle={{
                                         background: '#ddd',
@@ -61,7 +60,7 @@ export const Home = () => (
                                         boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
                                     }}
                                 >
-                                    <h3 style={{ color: '#343a40' }}></h3>
+                                    <h3 style={{ color: '#343a40' }}>Ksis</h3>
                                     <p>
                                         Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
                                     </p>
@@ -71,10 +70,17 @@ export const Home = () => (
                                 </TimelineItem>
                                 <TimelineItem
                                     key="003"
-                                    dateInnerStyle={{ backgroundColor: '#343a40', color: 'white' }}>
-
-                                    <h3></h3>
-                                    <h4>Subtitle</h4>
+                                    dateInnerStyle={{ backgroundColor: '#343a40', color: 'white' }}
+                                    bodyContainerStyle={{
+                                        background: '#343a40',
+                                        color: 'white',
+                                        padding: '20px',
+                                        borderRadius: '8px',
+                                        boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+                                    }}
+                                    >
+                                        
+                                    <h3 style={{color: 'white'}}>OOP</h3>
                                     <p>
                                         Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
                                     </p>
@@ -88,9 +94,14 @@ export const Home = () => (
                                 <TimelineItem
                                     key="004"
                                     dateInnerStyle={{ background: 'white ', color: '#343a40' }}
+                                    bodyContainerStyle={{
+                                        background: '#ddd',
+                                        padding: '20px',
+                                        borderRadius: '8px',
+                                        boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+                                    }}
                                 >
-                                    <h3></h3>
-                                    <h4>Subtitle</h4>
+                                    <h3>WebT</h3>
                                     <p>
                                         Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
                                     </p>
@@ -102,14 +113,14 @@ export const Home = () => (
                                     key="005"
                                     dateInnerStyle={{ backgroundColor: '#343a40', color: 'white' }}
                                     bodyContainerStyle={{
-                                        background: '#ddd',
+                                        background: '#343a40',
+                                        color:'white',
                                         padding: '20px',
                                         borderRadius: '8px',
                                         boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
                                     }}
                                 >
-                                    <h3 style={{ color: '#343a40' }}></h3>
-                                    <h4 style={{ color: '#343a40' }}>Subtitle</h4>
+                                    <h3 style={{ color: 'white' }}>RPI</h3>
                                     <p>
                                         Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
                                     </p>
@@ -120,9 +131,14 @@ export const Home = () => (
                                 <TimelineItem
                                     key="006"
                                     dateInnerStyle={{ backgroundColor: 'white ', color: '#343a40' }}
+                                    bodyContainerStyle={{
+                                        background: '#ddd',
+                                        padding: '20px',
+                                        borderRadius: '8px',
+                                        boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+                                    }}
                                 >
-                                    <h3></h3>
-                                    <h4>Subtitle</h4>
+                                    <h3>CarouselJS</h3>
                                     <p>
                                         Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
                                     </p>

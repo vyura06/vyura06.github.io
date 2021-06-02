@@ -13,14 +13,13 @@ function Search() {
             }} />
             {
                 JSONDATA.filter((val) => {
-                    if (searchTerm != "" && (val.first_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                        val.last_name.toLowerCase().includes(searchTerm.toLowerCase()))) {
+                    if (searchTerm != "" && (val.first_name.toLowerCase().includes(searchTerm.toLowerCase()))) {
                         return val
                     }
                 }).map((val, key) => {
                     return (
                         <div className="user" key={key}>
-                            <a><Link to={val.link}>{val.first_name} {val.last_name}</Link></a>
+                            <a><a href={val.link}>{val.first_name}</a></a>
                         </div>
                     );
                 })

@@ -1,10 +1,9 @@
-import React, {Suspense } from "react";
+import React, {Suspense} from "react";
 import '../styles/App.css';
 import '../index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navibar from './Navibar'
 import Footer from './Footer'
-import UserID from '../UsersID'
 import Users from '../Users'
 import WebFont from 'webfontloader';
 
@@ -27,7 +26,6 @@ const Hero = () => {
                         <Switch>
                             <Route exact path="/" component={Home} />
                             <Route path="/users" component={Users} />
-                            <Route path="/about/:userName" component={UserID} />
                         </Switch>
                 </Router>
             </Suspense>

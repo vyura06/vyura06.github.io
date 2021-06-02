@@ -1,38 +1,70 @@
 [
     {
-        "first_name": "Yuri",
-        "link": "/about/Azaryonok"
+        "first_name": "Ksis",
+        "link": "https://github.com/vyura06/Ksis"
     },
     {
-        "first_name": "Sergey",
-        "link": "/about/Arlanov"
+        "first_name": "OOP",
+        "link": "https://github.com/vyura06/OOP"
     },
     {
-        "first_name": "Oleg",
-        "link": "/about/Belousov"
+        "first_name": "vyura06.github.io",
+        "link": "https://github.com/vyura06/vyura06.github.io"
     },
     {
-        "first_name": "Vladimir",
-        "link": "/about/Bychkov"
+        "first_name": "YAP_COMILATORS",
+        "link": "https://github.com/vyura06/YAP_COMILATORS"
     },
     {
-        "first_name": "Joseph",
-        "link": "/about/Veinerovich"
+        "first_name": "WebT",
+        "link": "https://github.com/vyura06/TRPO"
     },
     {
-        "first_name": "Igor",
-        "link": "/about/Volchek"
+        "first_name": "RPI",
+        "link": "https://github.com/vyura06/WebT"
     },
     {
-        "first_name": "Stanislav",
-        "link": "/about/Haiduk"
+        "first_name": "GhostHome-1",
+        "link": "https://github.com/vyura06/OSISP-2"
     },
     {
-        "first_name": "Victor",
-        "link": "/about/Dashuk"
+        "first_name": "CarouselJS",
+        "link": "https://github.com/vyura06/CarouselJS"
     },
     {
-        "first_name": "Yuri",
-        "link": "/about/Elkhov"
+        "first_name": "OSISP",
+        "link": "https://github.com/vyura06/OSISP"
+    },
+    {
+        "first_name": "HCJ-Projects",
+        "link": "https://github.com/vyura06/HCJ-Projects"
+    },
+    {
+        "first_name": "OAIP-2",
+        "link": "https://github.com/vyura06/OAIP-2"
+    },
+    {
+        "first_name": "TI",
+        "link": "https://github.com/vyura06/TI"
+    },
+    {
+        "first_name": "Kursash-3sem",
+        "link": "https://github.com/vyura06/Kursash-3sem"
+    },
+    {
+        "first_name": "C-Labs-VS",
+        "link": "https://github.com/vyura06/C-Labs-VS"
+    },
+    {
+        "first_name": "C-Labs",
+        "link": "https://github.com/vyura06/C-Labs"
+    },
+    {
+        "first_name": "SIAOD",
+        "link": "https://github.com/vyura06/SIAOD"
+    },
+    {
+        "first_name": "JavaLabs",
+        "link": "https://github.com/vyura06/JavaLabs"
     }
 ]
